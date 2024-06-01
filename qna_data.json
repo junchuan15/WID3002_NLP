@@ -1,0 +1,683 @@
+{
+  "questions_and_answers": [
+    {
+      "question": "How do I register for classes?",
+      "answer": "To register for classes, you need to log in to the MAYA student portal and follow the registration instructions provided."
+    },
+    {
+      "question": "Where is the library located?",
+      "answer": "The library is located at the center of the campus, near the main administrative building."
+    },
+    {
+      "question": "What are the registration deadlines?",
+      "answer": "The registration deadlines is 28/9/2024 for undergraduates student."
+    },
+    {
+      "question": "Does UM provide free shuttle bus services?",
+      "answer": "Yes, UM provide shuttle bus service with 5 routes which are AB, BA, C, D and E, the detail location for each route can refer to UM website."
+    },
+    {
+      "question": "I get KK1, where should I assemble during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "I am living at KK2, where should I assemble during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "Where should I go during registration day if I am living at KK3?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "For KK4 residents, where should we gather during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "I get KK7, where should I assemble during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "For KK8, where should we assemble?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "Where should people that get KK9 assemble during registration day?",
+      "answer": "At TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)"
+    },
+    {
+      "question": "What is the assembly location for KK10 resident during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "I get KK12, where should I assemble during registration day?",
+      "answer": "Kawad Palapes"
+    },
+    {
+      "question": "Can I register for classes if I have a hold on my account?",
+      "answer": "Registration of classes for freshies will only open on 4/10/2024."
+    },
+    {
+      "question": "I live at KK12, what time should I register on the registration day?",
+      "answer": "For girls, please register between 9am to 1pm. As for boys is 2pm to 5pm."
+    },
+    {
+      "question": "What is the registration date for people living at KK4",
+      "answer": "On 1/10/2023"
+    },
+    {
+      "question": "What documents should we prepare during registration?",
+      "answer": "A copy of offer letter, accommodation check-in form, letter of undertaking and blue background passport-sized photo."
+    },
+    {
+      "question": "Does parents allowed to follow us to our residential collage to help to carry things?",
+      "answer": "No, parents must leave the campus area when the student has boarded the Shuttle Bus to respective residential collage."
+    },
+    {
+      "question": "What if I cannot come during registration day.",
+      "answer": "You need to make early inform to the UM-WOW MHS Secretariat."
+    },
+    {
+      "question": "Can I bring my own vehicle to campus?",
+      "answer": "Freshies are PROHIBITED to bring vehicles to campus."
+    },
+    {
+      "question": "How can I see which classes is available for registration?",
+      "answer": "You may refer to your own course handbook."
+    },
+    {
+      "question": "How do I verify that my registration is complete?",
+      "answer": "After you have pay your deposit registration payment, you have secure your spots at UM."
+    },
+    {
+      "question": "What is the maximum number of credit hours I can register for in a semester?",
+      "answer": "Maximum credit hours is 22."
+    },
+    {
+      "question": "What is the minumum number of credit hours I can register for in a semester?",
+      "answer": "15."
+    },
+    {
+      "question": "What's the process for signing up for classes?",
+      "answer": "You need to log into the MAYA student portal and follow the steps for class registration."
+    },
+    {
+      "question": "Where can I find the campus library?",
+      "answer": "The library is situated in the center of the campus, near the main administrative building."
+    },
+    {
+      "question": "When is the deadline for registration?",
+      "answer": "The registration deadline for undergraduate students is 28/9/2024."
+    },
+    {
+      "question": "Does UM have a free shuttle bus?",
+      "answer": "Yes, UM offers a shuttle bus service with routes AB, BA, C, D, and E. Details for each route are available on the UM website."
+    },
+    {
+      "question": "I'm in KK1, where do I need to go on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "I'm staying at KK2, where do I meet on registration day?",
+      "answer": "Head to Kawad Palapes."
+    },
+    {
+      "question": "If I live in KK3, where should I go on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Where do KK4 residents need to go on registration day?",
+      "answer": "Kawad Palapes is the assembly point."
+    },
+    {
+      "question": "I'm assigned to KK7, where do I go on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Where do KK8 residents assemble?",
+      "answer": "You should go to Kawad Palapes."
+    },
+    {
+      "question": "I'm assigned to KK9, where should I go on registration day?",
+      "answer": "Assemble at TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)."
+    },
+    {
+      "question": "Where should KK10 residents go on registration day?",
+      "answer": "Head to Kawad Palapes."
+    },
+    {
+      "question": "I will be living in KK12, where should I assemble on registration day?",
+      "answer": "You need to go to Kawad Palapes."
+    },
+    {
+      "question": "Can I sign up for classes if there's a hold on my account?",
+      "answer": "Class registration for new students begins on 4/10/2024."
+    },
+    {
+      "question": "I stay at KK12, when should I register on the registration day?",
+      "answer": "Girls should register between 9am and 1pm, and boys between 2pm and 5pm."
+    },
+    {
+      "question": "When is the registration date for KK4 residents?",
+      "answer": "The date is 1/10/2023."
+    },
+    {
+      "question": "What documents do I need to have for registration?",
+      "answer": "You need a copy of the offer letter, accommodation check-in form, letter of undertaking, and a passport-sized photo with a blue background."
+    },
+    {
+      "question": "Can parents help carry things to our residential college?",
+      "answer": "No, parents must leave the campus once the student has boarded the Shuttle Bus to their residential college."
+    },
+    {
+      "question": "What should I do if I can't come on registration day?",
+      "answer": "Inform the UM-WOW MHS Secretariat ahead of time."
+    },
+    {
+      "question": "Can I bring my car to campus?",
+      "answer": "New students are not allowed to bring vehicles to campus."
+    },
+    {
+      "question": "Where can I check which classes are open for registration?",
+      "answer": "Refer to your course handbook."
+    },
+    {
+      "question": "How do I know if my registration is successful?",
+      "answer": "Once you've paid your deposit, your registration at UM is confirmed."
+    },
+    {
+      "question": "What's the maximum number of credits I can take in a semester?",
+      "answer": "You can take up to 22 credit hours."
+    },
+    {
+      "question": "What's the minimum number of credits I need to register for in a semester?",
+      "answer": "You need to register for at least 15 credit hours."
+    },
+    {
+      "question": "How can I enroll in my classes?",
+      "answer": "You can enroll in classes by accessing the MAYA student portal and following the enrollment instructions provided."
+    },
+    {
+      "question": "Where can I locate the university library?",
+      "answer": "The university library is situated centrally on campus, adjacent to the main administrative building."
+    },
+    {
+      "question": "When do I need to complete my registration?",
+      "answer": "The registration deadline for undergraduate students is September 28, 2024."
+    },
+    {
+      "question": "Does the university offer complimentary shuttle bus services?",
+      "answer": "Yes, the university provides shuttle bus services with five routes labeled AB, BA, C, D, and E. Detailed route information can be found on the university's website."
+    },
+    {
+      "question": "For those assigned to KK1, where should we assemble on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "If I reside in KK2, where should I gather during registration day?",
+      "answer": "Please gather at Kawad Palapes."
+    },
+    {
+      "question": "Where should I report during registration day if I'm assigned to KK3?",
+      "answer": "You need to report to Kawad Palapes."
+    },
+    {
+      "question": "For residents of KK4, where is the designated assembly point on registration day?",
+      "answer": "The assembly point for KK4 residents is Kawad Palapes."
+    },
+    {
+      "question": "If I'm allocated to KK7, where do I assemble during registration day?",
+      "answer": "Your assembly point is Kawad Palapes."
+    },
+    {
+      "question": "For residents of KK8, where do we assemble on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Where should those assigned to KK9 gather during registration day?",
+      "answer": "You should gather at TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)."
+    },
+    {
+      "question": "What is the assembly location for residents of KK10 during registration day?",
+      "answer": "The assembly location is Kawad Palapes."
+    },
+    {
+      "question": "If I get KK12, where should I assemble during registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Can I register for classes if there's a hold on my account?",
+      "answer": "No, registration for freshers will commence on October 4, 2024."
+    },
+    {
+      "question": "For residents of KK12, what time should we register on registration day?",
+      "answer": "Female residents should register between 9am and 1pm, while male residents should register between 2pm and 5pm."
+    },
+    {
+      "question": "When is the registration date for KK4 residents?",
+      "answer": "The registration date for KK4 residents is October 1, 2023."
+    },
+    {
+      "question": "What documents should I bring for registration?",
+      "answer": "You should bring a copy of your offer letter, accommodation check-in form, letter of undertaking, and a passport-sized photo with a blue background."
+    },
+    {
+      "question": "Are parents allowed to accompany us to our residential college to assist with carrying belongings?",
+      "answer": "No, parents must leave the campus once the student boards the Shuttle Bus to their residential college."
+    },
+    {
+      "question": "What should I do if I'm unable to attend registration day?",
+      "answer": "You need to inform the UM-WOW MHS Secretariat in advance."
+    },
+    {
+      "question": "Am I permitted to bring my own vehicle to campus?",
+      "answer": "No, freshers are not allowed to bring vehicles to campus."
+    },
+    {
+      "question": "How can I view available classes for registration?",
+      "answer": "You can refer to your course handbook for available classes."
+    },
+    {
+      "question": "How can I confirm that my registration is complete?",
+      "answer": "Your registration is complete once you have paid your deposit registration fee."
+    },
+    {
+      "question": "What is the maximum number of credit hours I can register for in a semester?",
+      "answer": "You can register for a maximum of 22 credit hours."
+    },
+    {
+      "question": "What is the minimum number of credit hours I must register for in a semester?",
+      "answer": "The minimum number of credit hours to register for is 15."
+    }, {
+      "question": "What's the address for Kolej Kediaman Tuanku Abdul Rahman (ASTAR)?",
+      "answer": "It's at Jalan Universiti, 50603 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur."
+    },
+    {
+      "question": "How many blocks does ASTAR have?",
+      "answer": "ASTAR has five blocks: A, B, C, D, and E."
+    },
+    {
+      "question": "What facilities can I find at ASTAR?",
+      "answer": "There are lots of facilities like Dewan Tun Perak, VIP Meeting Room, Audio Room, Treatment Room, Lounge Room, The Cube ASTAR, Musolla ASTAR, a multipurpose room, a cafeteria, a convenience store, and more!"
+    },
+    {
+      "question": "What kind of rooms are available at ASTAR?",
+      "answer": "You can get a room for 2 people."
+    },
+    {
+      "question": "Which bus routes go to ASTAR?",
+      "answer": "You can take the UM bus route AB and Rapid KL bus routes T815 and T789."
+    },
+    {
+      "question": "How do I contact the administration office at ASTAR?",
+      "answer": "You can call them at 03-7956 8922."
+    },
+    {
+      "question": "What's near ASTAR?",
+      "answer": "Nearby places include the Law Faculty, Medical Faculty, Dentistry Faculty, Examination Building, and 6th College."
+    },
+    {
+      "question": "What facilities does Kolej Kediaman Tuanku Bahiyah (KKTB) have?",
+      "answer": "KKTB has Dewan Umarak, a music room, student activity rooms, a meeting room, an Islamic hall, multiple sports courts, self-service laundry, and water vending machines."
+    },
+    {
+      "question": "How many blocks are there in KKTB?",
+      "answer": "KKTB has five blocks: A, B, C, D, and E."
+    },
+    {
+      "question": "How do I contact KKTB?",
+      "answer": "You can call their office at 03-7954 3603, or reach the manager at 019-9822307, and the assistant manager at 014-3576587."
+    },
+    {
+      "question": "What kind of rooms does KKTB offer?",
+      "answer": "KKTB offers rooms for 2 people."
+    },
+    {
+      "question": "What's nearby KKTB?",
+      "answer": "Nearby places include the 1st College, Engineering, Medical, Dentistry, and UM Specialist Centre."
+    },
+    {
+      "question": "What room types are available at Kolej Kediaman Tuanku Kurshiah (KK3)?",
+      "answer": "KK3 has rooms for 2 and 3 people."
+    },
+    {
+      "question": "What facilities does KK3 have?",
+      "answer": "KK3 has Dewan Kurshiah, sports facilities, multimedia and technical clubs, theater and arts clubs, an entrepreneurship club, a surau, an environmental club, a sports club, and hosts various annual events and festivals."
+    },
+    {
+      "question": "Which buses go to KK3?",
+      "answer": "You can take UM buses AB and BA, and Rapid KL bus T815."
+    },
+    {
+      "question": "What's the address for Kolej Kediaman Kelima (Dayasari)?",
+      "answer": "The address is Kolej Kediaman Kelima, Universiti Malaya, 50603 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur."
+    },
+    {
+      "question": "How many blocks does Kolej Kediaman Kelima (Dayasari) have?",
+      "answer": "Dayasari has six blocks: A, B, C, D, E, and F."
+    },
+    {
+      "question": "What facilities are available at Dayasari?",
+      "answer": "Facilities include a cooperative, multipurpose hall, Surau Nurul Hidayah, volleyball, futsal, tennis, basketball, netball, handball, squash courts, self-service laundry, a gym, sports storage, committee action rooms, parcel room, administration office, ballroom, band room, and study areas."
+    },
+    {
+      "question": "What types of rooms are available at Dayasari?",
+      "answer": "Rooms for 4, 3, 2 people, and single rooms are available."
+    },
+    {
+      "question": "Which buses go to Dayasari?",
+      "answer": "You can take the UM bus route BA and Rapid KL bus route T815."
+    },
+    {
+      "question": "How do I contact Dayasari's administration?",
+      "answer": "You can call them at 03-7956 7948."
+    },
+    {
+      "question": "What nearby locations can I find around Dayasari?",
+      "answer": "Nearby locations include the Swimming Pool, Sports Centre, UM Arena, Rimba Ilmu (Botanical Garden), and Ambang Asuhan Jepun."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Ibnu Sina?",
+      "answer": "Facilities include a multi-purpose hall with a stage, grocery store, reading room, TV and recreation room, gym, sports storage, committee action rooms, seminar room, meeting room, music room, multi-purpose room, surau, parcel room, laundry, vending machines, RO water dispenser, parking for cars and motorcycles, van service, PA system, various sports courts, Dataran Avicenna, laundry area, irons, and microwave ovens."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Ibnu Sina?",
+      "answer": "Rooms for 1 and 2 people are available."
+    },
+    {
+      "question": "How can I contact Kolej Kediaman Ibnu Sina's administration?",
+      "answer": "You can call them at 03-7960 1468."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Ibnu Sina?",
+      "answer": "Nearby locations include the Examination Building, Medical Faculty, Dentistry Faculty, 1st College, and UM Medical Centre."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Ketujuh (Za'ba)?",
+      "answer": "Facilities include a cafe, intellectual arena, Surau Al-Irsyad, futsal court, volleyball court, netball court, laundry, basketball court, gazebo, vending machines, tennis court, water filter machines, Za'ba Mart, washing machines, Za'baber, tactile pathway, study desks in Bilik Seri Jati, accessible lifts, accessible toilets, and in-room computer facilities."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Ketujuh (Za'ba)?",
+      "answer": "The available room type is a room for 3 people."
+    },
+    {
+      "question": "How can I contact Kolej Kediaman Ketujuh (Za'ba)?",
+      "answer": "You can call the administration at 03-7956 7946, or contact the manager Puan Aliaa Diyana Azizuddin at 012-632 9472, and assistant managers Encik Muhammad Hasrul Hairudin at 017-256 8739, Cik Faezah Mohamad at 019-906 5342, and Encik Md Syadab Alam at 011-1286 5710."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Ketujuh (Za'ba)?",
+      "answer": "Nearby locations include the 3rd College, 4th College, Languages & Linguistics Faculty, Geology Department, and Arts & Social Sciences Faculty."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Kinabalu Universiti Malaya (KK8)?",
+      "answer": "Facilities include Dewan Seri Mutiara, cafeteria, self-service laundry, relaxation room, surau, water vending machine, mirror room, vending machines, gym, badminton court, The Cube, mini market, meeting room, gazebo, sickbay, seminar room, parcel room, and Bilik Kundasang."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Kinabalu Universiti Malaya (KK8)?",
+      "answer": "The available room type is a room for 3 people."
+    },
+    {
+      "question": "How can I contact Kolej Kediaman Kinabalu Universiti Malaya (KK8)?",
+      "answer": "You can call the office at 03-7955 8528."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Kinabalu Universiti Malaya (KK8)?",
+      "answer": "Nearby locations include the Faculty of Computer Science and Information Technology, 10th Residential College, Faculty of Malay Studies, and ROTU Training Site."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Tun Syed Zahiruddin?",
+      "answer": "Facilities include JTK Action Room, conference room, Sri Anggerik room, technical room, Dewan Sri Tanjung, badminton court, netball court, basketball court, futsal court, sepak takraw court, squash court, tennis court, gym, cafeteria, grocery store, laundry, relaxation room, music studio, and surau."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Tun Syed Zahiruddin?",
+      "answer": "The available room type is a room for 3 people."
+    },
+    {
+      "question": "What transportation options are available for Kolej Kediaman Tun Syed Zahiruddin?",
+      "answer": "You can take UM bus route E and Rapid KL bus route T815."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Tun Syed Zahiruddin?",
+      "answer": "Nearby locations include 7th College, 3rd College, 4th College, Languages & Linguistics Faculty, and Geology Department."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Tun Ahmad Zaidi?",
+      "answer": "Facilities include an office, study room, laundry, futsal court, badminton court, basketball court, volleyball court, outdoor gym, maintenance room, cafeteria, foyer, mini-mart, parcel area, printing service, surau, vending machines, lobby, music room, conference room, sports store, and Muroh room."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Tun Ahmad Zaidi?",
+      "answer": "The available room type is a room for 2 people."
+    },
+    {
+      "question": "What transportation options are available for Kolej Kediaman Tun Ahmad Zaidi?",
+      "answer": "You can take UM bus routes AB and BA, and Rapid KL bus route T815."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Tun Ahmad Zaidi?",
+      "answer": "Nearby locations include 8th College, ROTU Training Site, Faculty of Computer Science and Information Technology, Faculty of Malay Studies, and 7th College."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Ungku Aziz (KUAZ)?",
+      "answer": "Facilities include a cafeteria, grocery store, photocopy shop, laundry shop, pastry shop, coffee shop, recycling store, sports store, arts store, Dewan Pendeta, Inderakayangan, Inderaputra, Inderasari, Inderawarna, Inderasakti, main surau, reading room, laundry service, gym, college van, water filter machines, irons, water heaters, and a multipurpose court."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Ungku Aziz (KUAZ)?",
+      "answer": "Rooms for 1 and 2 people are available."
+    },
+    {
+      "question": "How can I contact Kolej Kediaman Ungku Aziz (KUAZ)?",
+      "answer": "You can call the administration at 03-7967 4629 or email them at kuaz@um.edu.my. The manager is Cik Nur Amni Mohd Supardi."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Ungku Aziz (KUAZ)?",
+      "answer": "Nearby locations include 12th College, 5th College, Swimming Pool, Sports Centre, and UM Arena."
+    },
+    {
+      "question": "What facilities are available at Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?",
+      "answer": "Facilities include a cafeteria, student parcel room, student cube room, Ezibox Poslaju, self-service laundry, ATM, HE & SHE Coffee cafeteria, vending machines, sports court, barber shop, convenience store, elevator, and KK Mart."
+    },
+    {
+      "question": "What types of rooms are available at Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?",
+      "answer": "The available room type is a room for 2 people."
+    },
+    {
+      "question": "What transportation options are available for Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?",
+      "answer": "You can take UM bus routes AB and BA, and Rapid KL bus route T815."
+    },
+    {
+      "question": "What nearby locations are accessible from Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?",
+      "answer": "Nearby locations include 11th College, 5th College, Swimming Pool, Sports Centre, and UM Arena."
+    },
+    {
+      "question": "How can I sign up for my classes?",
+      "answer": "Just log into the MAYA student portal and follow their instructions."
+    },
+    {
+      "question": "Where's the main library located?",
+      "answer": "It's right at the center of the campus, near the main administrative building."
+    },
+    {
+      "question": "When do I need to register by?",
+      "answer": "For undergrads, the deadline is 28th September 2024."
+    },
+    {
+      "question": "Does UM offer a shuttle bus service?",
+      "answer": "Yes, UM has free shuttle buses on routes AB, BA, C, D, and E. Check the UM website for more details."
+    },
+    {
+      "question": "I'm assigned to KK1. Where do I go on registration day?",
+      "answer": "You need to go to Kawad Palapes."
+    },
+    {
+      "question": "I'm staying at KK2. Where should I meet up on registration day?",
+      "answer": "Meet at Kawad Palapes."
+    },
+    {
+      "question": "Where do I assemble if I'm living in KK3?",
+      "answer": "Head over to Kawad Palapes."
+    },
+    {
+      "question": "I'm in KK4. Where should we gather on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Where do KK7 residents need to go on registration day?",
+      "answer": "Go to Kawad Palapes."
+    },
+    {
+      "question": "If I'm in KK8, where do I need to go on registration day?",
+      "answer": "You should head to Kawad Palapes."
+    },
+    {
+      "question": "I'm in KK9. Where do I need to assemble on registration day?",
+      "answer": "You should go to TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)."
+    },
+    {
+      "question": "I'm assigned to KK10. Where do I go on registration day?",
+      "answer": "Kawad Palapes is your spot."
+    },
+    {
+      "question": "I got KK12. Where do I need to go on registration day?",
+      "answer": "You should assemble at Kawad Palapes."
+    },
+    {
+      "question": "Can I register for classes if I have a hold on my account?",
+      "answer": "Class registration for freshers starts on 4th October 2024."
+    },
+    {
+      "question": "I live in KK12. What time should I register on the registration day?",
+      "answer": "Girls should register between 9am and 1pm, and boys between 2pm and 5pm."
+    },
+    {
+      "question": "When is the registration date for KK4 residents?",
+      "answer": "It's on 1st October 2023."
+    },
+    {
+      "question": "What documents do I need to bring for registration?",
+      "answer": "You'll need a copy of your offer letter, accommodation check-in form, letter of undertaking, and a passport-sized photo with a blue background."
+    },
+    {
+      "question": "Are parents allowed to help us move into our residential college?",
+      "answer": "No, parents need to leave the campus once you board the Shuttle Bus to your residential college."
+    },
+    {
+      "question": "What if I can't make it on registration day?",
+      "answer": "You should inform the UM-WOW MHS Secretariat ahead of time."
+    },
+    {
+      "question": "Can I bring my own vehicle to campus?",
+      "answer": "Freshers are not allowed to bring vehicles to campus."
+    },
+    {
+      "question": "Where can I see the classes available for registration?",
+      "answer": "Check your course handbook."
+    },
+    {
+      "question": "How do I know if my registration is complete?",
+      "answer": "Your registration is complete once you pay your deposit."
+    },
+    {
+      "question": "What's the maximum number of credit hours I can take in a semester?",
+      "answer": "You can register for up to 22 credit hours."
+    },
+    {
+      "question": "What's the minimum number of credit hours I need to take in a semester?",
+      "answer": "You need to take at least 15 credit hours."
+    },
+    {
+      "question": "How do I enroll in classes?",
+      "answer": "Log into the MAYA student portal and follow the instructions for enrolling in classes."
+    },
+    {
+      "question": "Where can I find the library on campus?",
+      "answer": "It's in the center of the campus, near the main admin building."
+    },
+    {
+      "question": "What's the deadline for registration?",
+      "answer": "For undergraduates, the deadline is 28th September 2024."
+    },
+    {
+      "question": "Does UM offer a free shuttle bus?",
+      "answer": "Yes, UM has a shuttle bus service with routes AB, BA, C, D, and E. Details are on the UM website."
+    },
+    {
+      "question": "I'm staying in KK1. Where should I go on registration day?",
+      "answer": "Go to Kawad Palapes."
+    },
+    {
+      "question": "I'm in KK2. Where do I need to assemble on registration day?",
+      "answer": "You should go to Kawad Palapes."
+    },
+    {
+      "question": "Where do I need to go on registration day if I'm in KK3?",
+      "answer": "Head to Kawad Palapes."
+    },
+    {
+      "question": "Where should KK4 residents gather on registration day?",
+      "answer": "Kawad Palapes."
+    },
+    {
+      "question": "I'm in KK7. Where do I go on registration day?",
+      "answer": "You need to assemble at Kawad Palapes."
+    },
+    {
+      "question": "Where do KK8 residents go on registration day?",
+      "answer": "Kawad Palapes."
+    },
+    {
+      "question": "I got assigned to KK9. Where should I assemble on registration day?",
+      "answer": "Go to TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)."
+    },
+    {
+      "question": "I'm in KK10. Where should I go on registration day?",
+      "answer": "Assemble at Kawad Palapes."
+    },
+    {
+      "question": "I'm assigned to KK12. Where do I go on registration day?",
+      "answer": "You need to assemble at Kawad Palapes."
+    },
+    {
+      "question": "Can I register for classes if I have a hold on my account?",
+      "answer": "No, you can start registering for classes on 4th October 2024."
+    },
+    {
+      "question": "I live at KK12. When should I register on the registration day?",
+      "answer": "Girls should register between 9am and 1pm, boys between 2pm and 5pm."
+    },
+    {
+      "question": "When do KK4 residents register?",
+      "answer": "The registration date for KK4 residents is 1st October 2023."
+    },
+    {
+      "question": "What documents do I need for registration?",
+      "answer": "You'll need your offer letter, accommodation check-in form, letter of undertaking, and a passport-sized photo with a blue background."
+    },
+    {
+      "question": "Can parents help us move in to our dorms?",
+      "answer": "No, parents have to leave once you board the Shuttle Bus to your dorm."
+    },
+    {
+      "question": "What should I do if I can't come on registration day?",
+      "answer": "Let the UM-WOW MHS Secretariat know in advance."
+    },
+    {
+      "question": "Am I allowed to bring my own vehicle to campus?",
+      "answer": "No, freshers are not allowed to bring vehicles."
+    },
+    {
+      "question": "How can I check the classes available for registration?",
+      "answer": "Refer to your course handbook."
+    },
+    {
+      "question": "How can I be sure my registration is complete?",
+      "answer": "Your registration is complete once you've paid your deposit."
+    },
+    {
+      "question": "What's the most number of credit hours I can take?",
+      "answer": "You can take up to 22 credit hours."
+    },
+    {
+      "question": "What's the least number of credit hours I need to take?",
+      "answer": "You need to take at least 15 credit hours."
+    }
+  ]
+}

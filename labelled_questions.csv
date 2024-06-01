@@ -1,0 +1,171 @@
+Question,Label
+How do I register for classes?,class
+Where is the library located?,general
+What are the registration deadlines?,registration
+Does UM provide free shuttle bus services?,general
+"I get KK1, where should I assemble during registration day?",registration
+"I am living at KK2, where should I assemble during registration day?",registration
+Where should I go during registration day if I am living at KK3?,registration
+"For KK4 residents, where should we gather during registration day?",registration
+"I get KK7, where should I assemble during registration day?",registration
+"For KK8, where should we assemble?",registration
+Where should people that get KK9 assemble during registration day?,registration
+What is the assembly location for KK10 resident during registration day?,registration
+"I get KK12, where should I assemble during registration day?",registration
+Can I register for classes if I have a hold on my account?,class
+"I live at KK12, what time should I register on the registration day?",class
+What is the registration date for people living at KK4,registration
+What documents should we prepare during registration?,registration
+Does parents allowed to follow us to our residential collage to help to carry things?,general
+What if I cannot come during registration day.,registration
+Can I bring my own vehicle to campus?,general
+How can I see which classes is available for registration?,class
+How do I verify that my registration is complete?,registration
+What is the maximum number of credit hours I can register for in a semester?,credit hours
+What is the minumum number of credit hours I can register for in a semester?,credit hours
+What's the process for signing up for classes?,class
+Where can I find the campus library?,general
+When is the deadline for registration?,registration
+Does UM have a free shuttle bus?,general
+"I'm in KK1, where do I need to go on registration day?",registration
+"I'm staying at KK2, where do I meet on registration day?",registration
+"If I live in KK3, where should I go on registration day?",registration
+Where do KK4 residents need to go on registration day?,registration
+"I'm assigned to KK7, where do I go on registration day?",registration
+Where do KK8 residents assemble?,registration
+"I'm assigned to KK9, where should I go on registration day?",registration
+Where should KK10 residents go on registration day?,registration
+"I will be living in KK12, where should I assemble on registration day?",registration
+Can I sign up for classes if there's a hold on my account?,class
+"I stay at KK12, when should I register on the registration day?",class
+When is the registration date for KK4 residents?,registration
+What documents do I need to have for registration?,registration
+Can parents help carry things to our residential college?,general
+What should I do if I can't come on registration day?,registration
+Can I bring my car to campus?,general
+Where can I check which classes are open for registration?,class
+How do I know if my registration is successful?,registration
+What's the maximum number of credits I can take in a semester?,credit hours
+What's the minimum number of credits I need to register for in a semester?,credit hours
+How can I enroll in my classes?,class
+Where can I locate the university library?,general
+When do I need to complete my registration?,registration
+Does the university offer complimentary shuttle bus services?,general
+"For those assigned to KK1, where should we assemble on registration day?",registration
+"If I reside in KK2, where should I gather during registration day?",registration
+Where should I report during registration day if I'm assigned to KK3?,registration
+"For residents of KK4, where is the designated assembly point on registration day?",registration
+"If I'm allocated to KK7, where do I assemble during registration day?",registration
+"For residents of KK8, where do we assemble on registration day?",registration
+Where should those assigned to KK9 gather during registration day?,registration
+What is the assembly location for residents of KK10 during registration day?,registration
+"If I get KK12, where should I assemble during registration day?",registration
+Can I register for classes if there's a hold on my account?,class
+"For residents of KK12, what time should we register on registration day?",class
+When is the registration date for KK4 residents?,registration
+What documents should I bring for registration?,registration
+Are parents allowed to accompany us to our residential college to assist with carrying belongings?,general
+What should I do if I'm unable to attend registration day?,registration
+Am I permitted to bring my own vehicle to campus?,general
+How can I view available classes for registration?,class
+How can I confirm that my registration is complete?,registration
+What is the maximum number of credit hours I can register for in a semester?,credit hours
+What is the minimum number of credit hours I must register for in a semester?,credit hours
+What's the address for Kolej Kediaman Tuanku Abdul Rahman (ASTAR)?,residential college
+How many blocks does ASTAR have?,general
+What facilities can I find at ASTAR?,general
+What kind of rooms are available at ASTAR?,general
+Which bus routes go to ASTAR?,general
+How do I contact the administration office at ASTAR?,general
+What's near ASTAR?,general
+What facilities does Kolej Kediaman Tuanku Bahiyah (KKTB) have?,residential college
+How many blocks are there in KKTB?,general
+How do I contact KKTB?,general
+What kind of rooms does KKTB offer?,general
+What's nearby KKTB?,general
+What room types are available at Kolej Kediaman Tuanku Kurshiah (KK3)?,residential college
+What facilities does KK3 have?,residential college
+Which buses go to KK3?,general
+What's the address for Kolej Kediaman Kelima (Dayasari)?,residential college
+How many blocks does Kolej Kediaman Kelima (Dayasari) have?,residential college
+What facilities are available at Dayasari?,residential college
+What types of rooms are available at Dayasari?,residential college
+Which buses go to Dayasari?,general
+How do I contact Dayasari's administration?,general
+What nearby locations can I find around Dayasari?,general
+What facilities are available at Kolej Kediaman Ibnu Sina?,residential college
+What types of rooms are available at Kolej Kediaman Ibnu Sina?,residential college
+How can I contact Kolej Kediaman Ibnu Sina's administration?,residential college
+What nearby locations are accessible from Kolej Kediaman Ibnu Sina?,residential college
+What facilities are available at Kolej Kediaman Ketujuh (Za'ba)?,residential college
+What types of rooms are available at Kolej Kediaman Ketujuh (Za'ba)?,residential college
+How can I contact Kolej Kediaman Ketujuh (Za'ba)?,residential college
+What nearby locations are accessible from Kolej Kediaman Ketujuh (Za'ba)?,residential college
+What facilities are available at Kolej Kediaman Kinabalu Universiti Malaya (KK8)?,residential college
+What types of rooms are available at Kolej Kediaman Kinabalu Universiti Malaya (KK8)?,residential college
+How can I contact Kolej Kediaman Kinabalu Universiti Malaya (KK8)?,residential college
+What nearby locations are accessible from Kolej Kediaman Kinabalu Universiti Malaya (KK8)?,residential college
+What facilities are available at Kolej Kediaman Tun Syed Zahiruddin?,residential college
+What types of rooms are available at Kolej Kediaman Tun Syed Zahiruddin?,residential college
+What transportation options are available for Kolej Kediaman Tun Syed Zahiruddin?,residential college
+What nearby locations are accessible from Kolej Kediaman Tun Syed Zahiruddin?,residential college
+What facilities are available at Kolej Kediaman Tun Ahmad Zaidi?,residential college
+What types of rooms are available at Kolej Kediaman Tun Ahmad Zaidi?,residential college
+What transportation options are available for Kolej Kediaman Tun Ahmad Zaidi?,residential college
+What nearby locations are accessible from Kolej Kediaman Tun Ahmad Zaidi?,residential college
+What facilities are available at Kolej Kediaman Ungku Aziz (KUAZ)?,residential college
+What types of rooms are available at Kolej Kediaman Ungku Aziz (KUAZ)?,residential college
+How can I contact Kolej Kediaman Ungku Aziz (KUAZ)?,residential college
+What nearby locations are accessible from Kolej Kediaman Ungku Aziz (KUAZ)?,residential college
+What facilities are available at Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?,residential college
+What types of rooms are available at Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?,residential college
+What transportation options are available for Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?,residential college
+What nearby locations are accessible from Kolej Kediaman Raja Dr. Nazrin Shah (KK12)?,residential college
+How can I sign up for my classes?,class
+Where's the main library located?,general
+When do I need to register by?,class
+Does UM offer a shuttle bus service?,general
+I'm assigned to KK1. Where do I go on registration day?,registration
+I'm staying at KK2. Where should I meet up on registration day?,registration
+Where do I assemble if I'm living in KK3?,registration
+I'm in KK4. Where should we gather on registration day?,registration
+Where do KK7 residents need to go on registration day?,registration
+"If I'm in KK8, where do I need to go on registration day?",registration
+I'm in KK9. Where do I need to assemble on registration day?,registration
+I'm assigned to KK10. Where do I go on registration day?,registration
+I got KK12. Where do I need to go on registration day?,registration
+Can I register for classes if I have a hold on my account?,class
+I live in KK12. What time should I register on the registration day?,class
+When is the registration date for KK4 residents?,registration
+What documents do I need to bring for registration?,registration
+Are parents allowed to help us move into our residential college?,general
+What if I can't make it on registration day?,registration
+Can I bring my own vehicle to campus?,general
+Where can I see the classes available for registration?,class
+How do I know if my registration is complete?,registration
+What's the maximum number of credit hours I can take in a semester?,credit hours
+What's the minimum number of credit hours I need to take in a semester?,credit hours
+How do I enroll in classes?,class
+Where can I find the library on campus?,general
+What's the deadline for registration?,registration
+Does UM offer a free shuttle bus?,general
+I'm staying in KK1. Where should I go on registration day?,registration
+I'm in KK2. Where do I need to assemble on registration day?,registration
+Where do I need to go on registration day if I'm in KK3?,registration
+Where should KK4 residents gather on registration day?,registration
+I'm in KK7. Where do I go on registration day?,registration
+Where do KK8 residents go on registration day?,registration
+I got assigned to KK9. Where should I assemble on registration day?,registration
+I'm in KK10. Where should I go on registration day?,registration
+I'm assigned to KK12. Where do I go on registration day?,registration
+Can I register for classes if I have a hold on my account?,class
+I live at KK12. When should I register on the registration day?,class
+When do KK4 residents register?,class
+What documents do I need for registration?,registration
+Can parents help us move in to our dorms?,general
+What should I do if I can't come on registration day?,registration
+Am I allowed to bring my own vehicle to campus?,general
+How can I check the classes available for registration?,class
+How can I be sure my registration is complete?,registration
+What's the most number of credit hours I can take?,credit hours
+What's the least number of credit hours I need to take?,credit hours
