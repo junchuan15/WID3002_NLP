@@ -40,3 +40,11 @@
 #  username: username
 #  password: password
 #  queue: queue
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Uncomment the line below if you're using the RASA server API
+# tracker_store:
+#   type: "redis"
+#   url: "redis://localhost:6379/0"

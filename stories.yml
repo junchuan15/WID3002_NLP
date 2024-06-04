@@ -1,0 +1,16 @@
+version: "3.1"
+stories:
+  - story: geocoding path
+    steps:
+    - intent: geocoding
+    - action: action_geocoding
+
+  - story: intent classification path
+    steps:
+    - intent: intent_classification
+    - action: action_intent_classification
+
+  - story: ilama3 response path
+    steps:
+    - intent: ilama3_response
+    - action: action_ilama3
