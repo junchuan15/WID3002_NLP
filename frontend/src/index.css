@@ -1,71 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
+
+body {
+    background: #E8EBF5;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
 }
 
 #root {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-container {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%; /* Ensures chatbot takes full width */
+  height: 80%;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #a39af5 transparent; 
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #695af5; 
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
 
 .chat-header {
+  position: relative;
   padding: 1rem;
-  background-color: #4A90E2;
+  background-color: #5343e7;
   color: white;
   text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-header h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.dropbtn {
+  background-color: #5343e7;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 96%;
+  background-color: #695af5;
+  color: white;
+  padding: 12px 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+  /* border-radius: 5px; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content.show {
+  display: block;
 }
 
 .chat-history {
   flex-grow: 1;
   padding: 1rem;
   overflow-y: auto;
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
   display: flex;
-  flex-direction: column; /* Display messages row by row */
+  flex-direction: column;
 }
 
-.user-message {
-  align-self: flex-end;
-}
-
-.bot-message {
-  align-self: flex-start;
-}
-
-.chat-input-container {
-  display: flex;
-  padding: 1rem;
-  background-color: #ddd;
-}
-
-.chat-input {
-  flex-grow: 1;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-}
-
-.chat-button {
-  padding: 0.5rem 1rem;
-  background-color: #4A90E2;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.message {
+.user-message, .bot-message {
   padding: 0.5rem;
   margin: 0.5rem 0;
   border-radius: 4px;
@@ -73,13 +124,70 @@ body, html {
 }
 
 .user-message {
-  background-color: #4A90E2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #5343e7;
   color: white;
   align-self: flex-end;
 }
 
 .bot-message {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #E2E2E2;
   color: black;
   align-self: flex-start;
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 1rem;
+  background-color: #dddddd;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input {
+  transition: border-color 0.3s ease;
+  cursor: text;
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.chat-input:hover, .chat-input:focus {
+  border-color: #5343e7;
+}
+
+.chat-button {
+  padding: 0.5rem;
+  background-color: #5343e7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #6b5ee9;
+}
+
+.chat-button i {
+  font-size: 1rem; /* Adjust as needed */
+}
+
+@keyframes typing {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.bot-typing {
+  background-color: #E2E2E2;
+  color: black;
+  align-self: flex-start;
+  animation: typing 1s infinite;
 }
