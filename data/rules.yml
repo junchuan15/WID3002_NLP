@@ -1,0 +1,62 @@
+version: "3.1"
+
+rules:
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Trigger action_get_address when user asks about location
+  steps:
+    - intent: ask_location_info
+    - action: action_get_address
+
+- rule: When user requests activity for UM-WOW for a specific date
+  condition:
+    - slot_was_set:
+        - date_requested: True
+  steps:
+    - intent: ask_activities
+      entities:
+        - date
+    - action: action_provide_activities
+    - slot_was_set:
+        - date_requested: False
+
+- rule: Ask for date if not provided
+  steps:
+    - intent: ask_activities
+    - action: action_provide_activities
+    - slot_was_set:
+        - date_requested: True
+    - action: action_ask_date
+
+- rule: Ask for registration place if not provided
+  steps:
+    - intent: registration_process
+    - action: action_provide_registration_process
+    - slot_was_set:
+        - reg_place_requested: True
+    - action: action_ask_reg_place
+
+- rule: Provide registration process after place provided
+  condition:
+    - slot_was_set:
+        - reg_place_requested: True
+  steps:
+    - intent: registration_process
+      entities:
+        - reg_place
+    - action: action_provide_registration_process
+    - slot_was_set:
+        - reg_place_requested: False
+
+- rule: End conversation on goodbye intent
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_restart
+
+- rule: Fallback
+  steps:
+    - action: action_default_fallback

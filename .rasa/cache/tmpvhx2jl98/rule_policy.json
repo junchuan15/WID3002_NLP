@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_default_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}]": "action_provide_registration_process",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"intent\": \"registration_process\"}}]": "action_ask_reg_place",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_ask_reg_place\"}, \"user\": {\"intent\": \"registration_process\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}]": "action_provide_activities",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"intent\": \"ask_activities\"}}]": "action_ask_date",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_ask_date\"}, \"user\": {\"intent\": \"ask_activities\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}]": "action_provide_activities",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"action_restart\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}]": "action_provide_registration_process",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_info\"}}]": "action_get_address",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_info\"}}, {\"prev_action\": {\"action_name\": \"action_get_address\"}, \"user\": {\"intent\": \"ask_location_info\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_default_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_ask_date\"}, \"user\": {\"intent\": \"ask_activities\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"action_restart\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_ask_reg_place\"}, \"user\": {\"intent\": \"registration_process\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"reg_place\"], \"intent\": \"registration_process\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}, {\"prev_action\": {\"action_name\": \"action_provide_registration_process\"}, \"user\": {\"intent\": \"registration_process\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"entities\": [\"date\"], \"intent\": \"ask_activities\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}, {\"prev_action\": {\"action_name\": \"action_provide_activities\"}, \"user\": {\"intent\": \"ask_activities\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_activities\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_info\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"registration_process\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_info\"}}, {\"prev_action\": {\"action_name\": \"action_get_address\"}, \"user\": {\"intent\": \"ask_location_info\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]"
+    ]
+  }
+}

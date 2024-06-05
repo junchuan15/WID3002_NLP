@@ -1,0 +1,119 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq.documents_required
+  - ask_location_info
+  - ask_um_wow
+  - ask_dress_code
+  - ask_wow_dates
+  - ask_activities
+  - ask_skip_wow
+  - personal_items
+  - registration_dates_times
+  - registration_process
+  - vehicle_policy
+  - ask_um_map
+
+slots:
+  date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date
+
+  date_requested:
+    type: bool
+    influence_conversation: false
+    mappings:
+    - type: from_intent
+      intent: ask_activities
+      value: true
+  reg_place:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: reg_place
+
+  reg_place_requested:
+    type: bool
+    influence_conversation: false
+    mappings:
+    - type: from_intent
+      intent: registration_process
+      value: true
+
+
+responses:
+  utter_um_map:
+  - text: "Here is the UM Campus map."
+    image: "https://studyabroad.um.edu.my/campus-map"
+
+  utter_personal_items:
+  - text: "Students should prepare personal necessities such as study equipment, pillows, pillowcases, bed sheets, sports shoes and attire, formal wear, national dress, prayer essentials, personal hygiene items, etc. Students are encouraged to make cashless transactions and avoid carrying large amounts of cash to prevent loss."
+
+  utter_vehical_policy:
+  - text: "New students are NOT ALLOWED to bring their own vehicles to the campus."
+
+  utter_registration_date_and_time:
+  - text: "The registration dates and times are as follows:\n\n1. *30 September 2023 (Saturday):\n- 9:00 AM – 1:00 PM: KK2, KK12 (Female only), KK9 (Female only)\n- 2:00 PM – 5:00 PM: KK1, KK12 (Male only), KK9 (Female only)\n\n2. **1 October 2023 (Sunday)*:\n- 9:00 AM – 1:00 PM: KK8, KK10, KK9 (Male only)\n- 2:00 PM – 5:00 PM: KK3, KK4, KK7, KK9 (Male only)"
+
+  utter_um_wow_program:
+  - text: "The UM-WOW program, also known as the Week of Welcome MHS program, is a series of orientation sessions, registration activities, and events designed to help new students settle into university life. It starts from the registration date and covers essential information and activities to facilitate your transition to university."
+
+  utter_dress_code_um_wow:
+  - text: "During UM-WOW MHS, all freshies must dress neatly and appropriately according to Malaysian norms and culture. Male students should wear a collared T-shirt, dark-colored long pants, sports or closed shoes, and traditional attire. Female students are advised to wear a collared T-shirt, dark-colored long pants or long skirt, sports or closed shoes, traditional attire, and Baju Kurung."
+
+  utter_wow_dates:
+  - text: "The Week of Welcome (WOW) will take place from 30 September 2023 to 5 October 2023. It's a week-long series of activities and events aimed at helping new students transition smoothly into university life."
+
+  utter_skip_wow:
+  - text: "It is highly recommended for all new students to attend the Week of Welcome as it includes important orientation sessions, registration, and activities designed to help you settle into university life. If you have specific concerns, you may contact the Student Affairs Department for more information."
+
+  utter_faq.documents_required:
+    - text: "You need to bring the following documents for registration:\n1. A copy of the offer letter.\n2. Completed Residential College Registration Form & Letter of Undertaking (LOU).\n3. A passport-sized photo with a blue background taken professionally (selfies are not allowed)."
+
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye, have a nice day ahead!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+entities:
+  - location
+  - date
+  - reg_place
+
+actions:
+  - action_get_address
+  - action_provide_activities
+  - action_ask_date
+  - action_provide_registration_process
+  - action_ask_reg_place
+  - action_restart
+  - action_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
