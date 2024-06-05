@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
 
 body {
-  background-image: url('../public/UM-pic8.jpeg'); 
+  background-image: url('../public/Dewan_Tuanku_Canselor_Universiti_Malaya_in_Kuala_Lumpur2710.jpg'); 
   background-size: cover;
   background-position: center;
   position: relative;
@@ -27,18 +27,21 @@ body::before {
   justify-content: center;
   align-items: center;
 }
+
 .chat-container {
   margin: 1rem;
   display: flex;
   flex-direction: column;
   height: 80%;
-  width: 50%;
+  width: 60%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.7); 
   scrollbar-width: thin;
-  scrollbar-color: #a39af5 transparent; 
+  scrollbar-color: #a39af5 transparent;
+  backdrop-filter: blur(10px); 
 }
+
 
 .chat-container::-webkit-scrollbar {
   width: 8px;
@@ -58,14 +61,16 @@ body::before {
 .chat-header {
   position: relative;
   padding: 1rem;
-  background-color: #5343e7;
-  color: white;
   text-align: center;
-  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  background-color: linear-gradient(to bottom, white 0%, white 100%, transparent 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0 0;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, white 0%, white 50%, transparent 100%);
 }
 
 .um-logo {
@@ -101,28 +106,33 @@ body::before {
   position: absolute;
   top: 100%;
   width: 96%;
-  background-color: #695af5;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding: 12px 16px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
   z-index: 1;
-  display: none;
-  /* border-radius: 5px; */
+  border-radius: 5px;
+  max-width: 90%;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content p {
+  margin: 0;
 }
 
 .dropdown-content.show {
   display: block;
 }
 
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
 .chat-history {
   flex-grow: 1;
   padding: 1rem;
   overflow-y: auto;
-  background-color: #f5f5f5;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
 }
@@ -142,9 +152,8 @@ body::before {
 }
 
 .bot-message {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  background-color: #E2E2E2;
-  color: black;
+  background-color: white;
+  display: inline-block;
   align-self: flex-start;
 }
 
@@ -164,8 +173,7 @@ body::before {
 .chat-input-container {
   display: flex;
   padding: 1rem;
-  background-color: #dddddd;
-  border-top: 1px solid #ccc;
+  background-color: linear-gradient(to bottom, white 0%, white 100%, transparent 100%);
 }
 
 .chat-input {
@@ -173,9 +181,14 @@ body::before {
   cursor: text;
   flex-grow: 1;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
   margin-right: 0.5rem;
+  background-color: transparent;
+}
+
+.chat-input.not-empty {
+  background: none;
 }
 
 .chat-input:hover, .chat-input:focus {
@@ -187,7 +200,7 @@ body::before {
   background-color: #5343e7;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center; 
@@ -200,20 +213,40 @@ body::before {
 }
 
 .chat-button i {
-  font-size: 1rem; /* Adjust as needed */
-}
-
-@keyframes typing {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  font-size: 1rem;
 }
 
 .bot-typing {
-  background-color: #E2E2E2;
+  background-color: #bbb;
   color: black;
   align-self: flex-start;
-  animation: typing 1s infinite;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.bot-typing .dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1.4s infinite both;
+}
+
+@keyframes blink {
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
 }
 
 .bot-profile {
@@ -224,12 +257,12 @@ body::before {
 }
 
 .bot-profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
 .bot-label {
-  font-size: 0.8rem;
-  color: #888;
+  font-size: 12px;
+  color: #000000;
 }

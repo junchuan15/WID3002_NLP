@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 
 const Chatbot = () => {
@@ -11,7 +11,7 @@ const Chatbot = () => {
     try {
       // Add user's message to the state first
       setMessages(prevMessages => [...prevMessages, { text: input, user: true }]);
-  
+
       const response = await fetch('http://localhost:5005/webhooks/rest/webhook', {
         method: 'POST',
         headers: {
@@ -19,10 +19,10 @@ const Chatbot = () => {
         },
         body: JSON.stringify({ message: input }),
       });
-  
+
       const data = await response.json();
       const botMessages = data.map((msg) => ({ text: msg.text, user: false }));
-  
+
       // Then add bot's response to the state
       setMessages(prevMessages => [...prevMessages, ...botMessages]);
       setInput('');
@@ -36,47 +36,59 @@ const Chatbot = () => {
     setInput(e.target.value);
   };
 
+  useEffect(() => {
+    if (dropdownOpen) {
+      const timer = setTimeout(() => setDropdownOpen(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [dropdownOpen]);
+
   return (
-    <div className={`chat-container ${'bg-white text-black'}`}>
-      <div className="chat-header flex items-center">
-      <img className="um-logo" src="/UM.png" alt="UM Logo" />
+    <div className="chat-container">
+      <div className="chat-header flex items-center gradient-bg">
+        <img className="um-logo" src="/UM.png" alt="UM Logo" />
         <h1>FreshiesBot</h1>
-        <div class="dropdown"> 
-        <button class="dropbtn" onClick={() => setDropdownOpen(!dropdownOpen)}><i class="fas fa-chevron-down"></i></button>
-    </div>
-    <div class={`dropdown-content ${dropdownOpen ? 'show' : ''}`} id="dropdownContent">
-      <p>FreshiesBot is a chatbot designed to assist new students in Universiti Malaya with their queries.</p><p> Feel free to ask anything!</p>
-  </div>
+        <div className="dropdown">
+          <button className="dropbtn" onClick={() => setDropdownOpen(!dropdownOpen)}>
+            <i className="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`} id="dropdownContent">
+          <p>FreshiesBot is a chatbot designed to assist new students in Universiti Malaya with their queries. Feel free to ask anything!</p>
+        </div>
       </div>
-      <div className={`chat-history ${'bg-gray-100'}`}>
-      {messages.map((msg, index) => (
+
+      <div className="chat-history">
+        {messages.map((msg, index) => (
           <div key={index} className={`message-container ${msg.user ? 'user-message-container' : 'bot-message-container'}`}>
             {!msg.user && (
               <div className="bot-profile">
                 <img className="bot-profile-pic" src="technical-support.png" alt="Bot" />
                 <div className="bot-label">FreshiesBot</div>
               </div>
-            )} 
+            )}
             <div className={`message ${msg.user ? 'user-message' : 'bot-message'}`}>
               {msg.text}
             </div>
-  </div>
-))}
+          </div>
+        ))}
       </div>
-      <div className={`chat-input-container ${'bg-gray-100'}`}>
+
+      <div className="chat-input-container gradient-bg-bottom">
         <input
           type="text"
           value={input}
           onChange={handleInputChange}
           onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-          className={`chat-input ${'bg-white text-black border-gray-300'}`}
+          className={`chat-input ${input ? 'not-empty' : ''}`}
           placeholder="Enter your message"
         />
-        <button class="chat-button">
-  <i class="fas fa-paper-plane"></i>
-</button>
+        <button className="chat-button sendBtn" onClick={handleSend}>
+          <i className="fas fa-paper-plane"></i>
+        </button>
       </div>
     </div>
+
   );
 };
 
