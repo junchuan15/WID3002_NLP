@@ -1,6 +1,147 @@
 version: "3.1"
 
 nlu:
+- intent: ask_um_map
+  examples: |
+    - Can I get a map of UM campus?
+    - Where can I find the UM campus map?
+    - Do you have a map of UM campus?
+    - How can I access the UM campus map?
+    - I need a map of the UM campus.
+
+- intent: registration_dates_times
+  examples: |
+    - What are the registration dates and times?
+    - When do we need to register?
+    - What day and time we need to register?
+    - What is the schedule of registration?
+    - Can you tell me the registration schedule?
+
+- intent: registration_process
+  examples: |
+    - How does registration works at [KK9](reg_place)?
+    - Explain the registration process at [Padang Kawad Palapes](reg_place)?
+    - What steps are involved in registration at [Padang Kawad Palapes](reg_place)?
+    - How do I register myself at [KK9](reg_place)?
+    - What should I do when registering at [Padang Kawad Palapes](reg_place)?
+    - How does registration works at [kk9](reg_place)?
+    - Explain the registration process at [padang kawad palapes](reg_place)?
+    - What steps are involved in registration at [Padang kawad palapes](reg_place)?
+    - Can you tell about the registration procedure at [Padang kawad palapes](reg_place)?
+    - How do I register myself at [kk9](reg_place)?
+
+- intent: personal_items
+  examples: |
+    - What personal items can students bring?
+    - What personal items should I pack to come to UM?
+    - List of personal items can new students can bring.
+
+- intent: vehicle_policy
+  examples: |
+    - Can new students bring vehicles to campus?
+    - Can I come with our own vehicle?
+    - Can i bring my car to UM?
+
+- intent: ask_um_wow
+  examples: |
+    - Tell me about UM-WOW?
+    - What is the UM-WOW program?
+    - Can you explain what is UM-WOW?
+    - What is UM-WOW for?
+
+- intent: ask_dress_code
+  examples: |
+    - What is the dress code for UM-WOW?
+    - How should I dress for UM-WOW?
+    - What are the clothing requirements for UM-WOW?
+    - What to wear during UM-WOW?
+    - Can you tell me about the attire for UM-WOW?
+
+- intent: ask_wow_dates
+  examples: |
+    - What is the date of UM-WOW?
+    - When does the UM-WOW start?
+    - What are the dates for the UM-WOW?
+    - When is UM-WOW?
+    - UM-WOW starts at when?
+
+- intent: ask_skip_wow
+  examples: |
+    - Is it mandatory to attend the UM-WOW?
+    - What if I miss the UM-WOW?
+    - Can I skip UM-WOW?
+    - Can I be absent for UM-WOW?
+    - Is it compulsory to participate in UM-WOW?
+
+- intent: ask_activities
+  examples: |
+    - What are the activities scheduled for [30 September 2023](date) on UM-WOW?
+    - What happens on [1 October 2023](date) during UM-WOW?
+    - Can you list the events on [2 October 2023](date) at UM-WOW?
+    - During UM-WOW, What is happening on [3 October 2023](date)?
+    - What are the events on [4 October 2023](date) when UM-WOW?
+    - What activities are planned for [5 October 2023](date) on UM-WOW?
+    - What's the schedule for [30/9/2023](date) at UM-WOW?
+    - Tell me about the events on [1/10/2023](date) during UM-WOW?
+    - Could you provide the schedule for [02/10/2023](date) at UM-WOW?
+    - What's happening on [3/10/2023](date) during UM-WOW?
+    - List the activities for [30/9](date) at UM-WOW?
+    - During UM-WOW, What is happening on [3 Oct](date)?
+    - What are the events on [4/10](date) when UM-WOW?
+
+- intent: ask_break_times
+  examples: |
+    - What are the Break Times during the Week of Welcome?
+    - When are the breaks during the Week of Welcome?
+    - Can you list the break times for the Week of Welcome?
+
+- intent: ask_location_info
+  examples: |
+    - What is the location of [Faculty of Law](location)?
+    - Can you tell me where [Faculty of Education](location) is?
+    - Where is [Faculty of Arts and Social Sciences](location)?
+    - Where can I find [Faculty of Economics & Administration](location)?
+    - Where is [Faculty of Business & Accountancy](location) located?
+    - Where is [Faculty of Science](location)?
+    - What is the location of [Faculty of Engineering](location)?
+    - Where is [Faculty of Medicine](location)?
+    - Can you provide the location of [Faculty of Dentistry](location)?
+    - Where is [Faculty of Built Environment](location)?
+    - What is the location of [Faculty of Computer Science and Information Technology](location)?
+    - Where is the [Examination Building](location)?
+    - Can you tell me where [Dewan Tunku Canselor](location) is?
+    - What is the location of [Chancellery Building](location)?
+    - Where are the [Central Lecture Halls (C01-C09)](location)?
+    - Where is the [Sports Centre](location)?
+    - Can you provide the location of [Rimba Ilmu Botanic Garden](location)?
+    - Where is the [Islamic Centre Mosque](location)?
+    - What is the location of [UM Main Library](location)?
+    - Where is the [UM Arena](location)?
+    - Can you tell me where the [Centre for Foundation in Science, Universiti Malaya](location) is?
+    - Where is the [Perdanasiswa Complex (KPS)](location)?
+    - What is the location of [UM Central](location)?
+    - Where is the [Academy of Islamic Studies](location)?
+    - Can you tell me where the [Academy Of Malay Studies (APM)](location) is?
+    - What is the location of the [Student Health Clinic](location)?
+    - Where is the [Postgraduate Residence](location)?
+    - Can you provide the location of [Padang Kawad PALAPES UM](location)?
+    - Where is [Tuanku Abd Rahman Residential College (KK1)](location)?
+    - What is the location of the [First Residential College Universiti Malaya](location)?
+    - Where is [Tuanku Bahiyah Residential College (KK2)](location)?
+    - Can you tell me where [Tuanku Kurshiah Residential College (KK3)](location) is?
+    - What is the location of [Bestari Residential College (KK4)](location)?
+    - Where is [Kolej Kediaman Kelima](location)?
+    - What is the location of [Avicenna Residential College (KK6)](location)?
+    - Where is [Kolej Kediaman Ibnu Sina UM](location)?
+    - Can you provide the location of [Za'ba Residential College (KK7)](location)?
+    - Where is [Kolej Kediaman Ketujuh (Za'ba)](location)?
+    - What is the location of [Kolej Kediaman Kinabalu](location)?
+    - Where is [Tun Syed Zahiruddin Residential College (KK9)](location)?
+    - Can you tell me where [Kolej Kediaman Tun Ahmad Zaidi](location) is?
+    - What is the location of [Ungku Aziz Residential College (KK11)](location)?
+    - Where is [Raja Dr. Nazrin Shah Residential College (KK12)](location)?
+    - Can you provide the location of [Kolej Kediaman Raja Dr. Nazrin Shah (KK12) UM](location)?
+
 - intent: greet
   examples: |
     - hey
@@ -89,3 +230,9 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: faq.documents_required
+  examples: |
+      - What documents are required for registration?
+      - Which documents do I need to bring for registration?
+      - What documents required during registration?

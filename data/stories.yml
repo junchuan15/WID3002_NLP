@@ -1,6 +1,46 @@
 version: "3.1"
 
 stories:
+- story: New student ask for reg date and time
+  steps:
+  - intent: registration_dates_times
+  - action: utter_registration_date_and_time
+
+- story: Are students allowed to bring vehicle
+  steps:
+  - intent: vehicle_policy
+  - action: utter_vehical_policy
+
+- story: List of personal items student can bring
+  steps:
+  - intent: personal_items
+  - action: utter_personal_items
+
+- story: Student ask for um campus map
+  steps:
+  - intent: ask_um_map
+  - action: utter_um_map
+
+- story: New student ask about the Week of Welcome (WOW)
+  steps:
+    - intent: ask_um_wow
+    - action: utter_um_wow_program
+
+- story: New student ask about the Week of Welcome (WOW) dates
+  steps:
+    - intent: ask_wow_dates
+    - action: utter_wow_dates
+
+- story: New student ask about the Week of Welcome (WOW) dress code
+  steps:
+    - intent: ask_dress_code
+    - action: utter_dress_code_um_wow
+
+- story: New student ask can they skip the Week of Welcome (WOW)
+  steps:
+    - intent: ask_skip_wow
+    - action: utter_skip_wow
+
 
 - story: happy path
   steps:
@@ -28,3 +68,10 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: tell reg_document
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq.documents_required
+  - action: utter_faq.documents_required
