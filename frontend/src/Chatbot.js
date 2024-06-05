@@ -39,6 +39,7 @@ const Chatbot = () => {
   return (
     <div className={`chat-container ${'bg-white text-black'}`}>
       <div className="chat-header flex items-center">
+      <img className="um-logo" src="/UM.png" alt="UM Logo" />
         <h1>FreshiesBot</h1>
         <div class="dropdown"> 
         <button class="dropbtn" onClick={() => setDropdownOpen(!dropdownOpen)}><i class="fas fa-chevron-down"></i></button>
@@ -48,14 +49,19 @@ const Chatbot = () => {
   </div>
       </div>
       <div className={`chat-history ${'bg-gray-100'}`}>
-        {messages.map((msg, index) => (
-          <div
-            key={index}
-            className={`message ${msg.user ? 'user-message' : 'bot-message'}`}
-          >
-            {msg.text}
-          </div>
-        ))}
+      {messages.map((msg, index) => (
+          <div key={index} className={`message-container ${msg.user ? 'user-message-container' : 'bot-message-container'}`}>
+            {!msg.user && (
+              <div className="bot-profile">
+                <img className="bot-profile-pic" src="technical-support.png" alt="Bot" />
+                <div className="bot-label">FreshiesBot</div>
+              </div>
+            )} 
+            <div className={`message ${msg.user ? 'user-message' : 'bot-message'}`}>
+              {msg.text}
+            </div>
+  </div>
+))}
       </div>
       <div className={`chat-input-container ${'bg-gray-100'}`}>
         <input
