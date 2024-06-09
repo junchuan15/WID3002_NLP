@@ -1,37 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
+import useTypingEffect from './useTypingEffect';
 
 const Chatbot = () => {
-  const [dropdownOpen, setDropdownOpen] = React.useState(false);
-  const welcomeMessage = { text: "Hello Freshies, Welcome to University Malaya! How can I help you?", user: false };
+  const [dropdownOpen, setDropdownOpen] = useState(false); 
+  const welcomeMessage = { text: "Hello Freshies, Welcome to Universiti Malaya! How can I help you?", user: false, id: 0 };
   const [messages, setMessages] = useState([welcomeMessage]);
   const [input, setInput] = useState('');
-
+  const chatHistoryRef = useRef(null);
+  
   const handleSend = async () => {
     try {
-      // Add user's message to the state first
-      setMessages(prevMessages => [...prevMessages, { text: input, user: true }]);
-
-      const response = await fetch('http://localhost:5005/webhooks/rest/webhook', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message: input }),
-      });
-
-      const data = await response.json();
-      const botMessages = data.map((msg) => ({ text: msg.text, user: false }));
-
-      // Then add bot's response to the state
-      setMessages(prevMessages => [...prevMessages, ...botMessages]);
-      setInput('');
+      setMessages(prevMessages => [...prevMessages, { text: input, user: true, id: prevMessages.length }]);
+  
+      setTimeout(async () => {
+        try {
+          const response = await fetch('http://localhost:5005/webhooks/rest/webhook', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: input }),
+          });
+  
+          const data = await response.json();
+          const botMessages = data.map((msg, index) => ({ text: msg.text, user: false, id: messages.length + index + 1 }));
+  
+          setMessages(prevMessages => [...prevMessages, ...botMessages]);
+          setInput('');
+        } catch (error) {
+          console.error('Error communicating with RASA:', error);
+          setMessages(prevMessages => [...prevMessages, { text: "Error communicating with bot", user: false, id: prevMessages.length }]);
+        }
+      }, 2000); 
     } catch (error) {
-      console.error('Error communicating with RASA:', error);
-      setMessages(prevMessages => [...prevMessages, { text: "Error communicating with bot", user: false }]);
+      console.error('Error:', error);
     }
   };
-
+  
   const handleInputChange = (e) => {
     setInput(e.target.value);
   };
@@ -43,11 +49,21 @@ const Chatbot = () => {
     }
   }, [dropdownOpen]);
 
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    if (chatHistoryRef.current) {
+      chatHistoryRef.current.scrollTop = chatHistoryRef.current.scrollHeight;
+    }
+  }, [messages]);
+
   return (
     <div className="chat-container">
       <div className="chat-header flex items-center gradient-bg">
         <img className="um-logo" src="/UM.png" alt="UM Logo" />
-        <h1>FreshiesBot</h1>
+        <h1 className="freshies-bot-title">
+          <span className="freshies">Freshies</span>
+          <span className="bot">Bot</span>
+          </h1>        
         <div className="dropdown">
           <button className="dropbtn" onClick={() => setDropdownOpen(!dropdownOpen)}>
             <i className="fas fa-chevron-down"></i>
@@ -58,19 +74,9 @@ const Chatbot = () => {
         </div>
       </div>
 
-      <div className="chat-history">
+      <div className="chat-history" ref={chatHistoryRef}>
         {messages.map((msg, index) => (
-          <div key={index} className={`message-container ${msg.user ? 'user-message-container' : 'bot-message-container'}`}>
-            {!msg.user && (
-              <div className="bot-profile">
-                <img className="bot-profile-pic" src="technical-support.png" alt="Bot" />
-                <div className="bot-label">FreshiesBot</div>
-              </div>
-            )}
-            <div className={`message ${msg.user ? 'user-message' : 'bot-message'}`}>
-              {msg.text}
-            </div>
-          </div>
+          <Message key={index} msg={msg} />
         ))}
       </div>
 
@@ -88,8 +94,27 @@ const Chatbot = () => {
         </button>
       </div>
     </div>
-
   );
 };
+
+const Message = ({ msg }) => {
+  const botMessage = !msg.user;
+  const text = useTypingEffect(msg.text);
+
+  return (
+    <div className={`message-container ${msg.user ? 'user-message-container' : 'bot-message-container'}`}>
+      {!msg.user && (
+        <div className="bot-profile">
+          <img className="bot-profile-pic" src="technical-support.png" alt="Bot" />
+          <div className="bot-label"></div>
+        </div>
+      )}
+      <div className={`message ${msg.user ? 'user-message' : 'bot-message'}`}>
+        {botMessage ? text : msg.text}
+      </div>
+    </div>
+  );
+};
+
 
 export default Chatbot;

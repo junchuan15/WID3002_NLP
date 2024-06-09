@@ -1,6 +1,23 @@
 version: "3.1"
 
 nlu:
+- intent: kk_facilities
+  examples: |
+    - What are the facilities in [KK1](facility_of_kk)?
+    - Tell me about the facilities in [KK2](facility_of_kk)
+    - I want to know the facilities available in [KK3](facility_of_kk)
+    - Can you list the facilities in [KK4](facility_of_kk)?
+    - What facilities does [KK5](facility_of_kk) have?
+    - List the facilities in [KK6](facility_of_kk)
+    - Facilities in [KK7](facility_of_kk)
+    - What does [KK8](facility_of_kk) offer?
+    - What amenities are available in [KK10](facility_of_kk)?
+    - Tell me the facilities in [KK11](facility_of_kk)
+    - What services are there in [KK12](facility_of_kk)?
+    - What facilities are there in [KK12](facility_of_kk)?
+    - Can you tell me about the amenities in [KK3](facility_of_kk)?
+    - I want to know about the facilities in [KK8](facility_of_kk)?
+
 - intent: ask_um_map
   examples: |
     - Can I get a map of UM campus?
@@ -11,11 +28,9 @@ nlu:
 
 - intent: registration_dates_times
   examples: |
-    - What are the registration dates and times?
     - When do we need to register?
     - What day and time we need to register?
-    - What is the schedule of registration?
-    - Can you tell me the registration schedule?
+    - Can you tell me about the registration date and time?
 
 - intent: registration_process
   examples: |
@@ -53,9 +68,6 @@ nlu:
   examples: |
     - What is the dress code for UM-WOW?
     - How should I dress for UM-WOW?
-    - What are the clothing requirements for UM-WOW?
-    - What to wear during UM-WOW?
-    - Can you tell me about the attire for UM-WOW?
 
 - intent: ask_wow_dates
   examples: |
@@ -88,7 +100,7 @@ nlu:
     - List the activities for [30/9](date) at UM-WOW?
     - During UM-WOW, What is happening on [3 Oct](date)?
     - What are the events on [4/10](date) when UM-WOW?
-
+    
 - intent: ask_break_times
   examples: |
     - What are the Break Times during the Week of Welcome?

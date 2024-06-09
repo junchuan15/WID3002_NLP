@@ -1,4 +1,4 @@
-#!C:\Users\DELL\Desktop\programming\VsCodeProjects\WID3002_NLP\venv\scripts\python.exe
+#!C:\UM\Y2S2\WID_3002 NLP\WID3002_NLP\venv\Scripts\python.exe
 
 import sys
 import json

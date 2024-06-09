@@ -1,5 +1,0 @@
-[telethon_credentials]
-api_id = 22703877
-api_hash = c8c50d9905d094a1f0da2635a2ff00a4
-phone = +601110689376
-username = Quah Jun Chuan

@@ -60,3 +60,23 @@ rules:
 - rule: Fallback
   steps:
     - action: action_default_fallback
+    
+- rule: Ask for KK facilities if not provided
+  steps:
+    - intent: kk_facilities
+    - action: action_provide_kk_facilities
+    - slot_was_set:
+        - reques_kk_for_facilities: true
+    - action: action_ask_kk_facilities
+
+- rule: Provide KK facilities after place provided
+  condition:
+    - slot_was_set:
+        - reques_kk_for_facilities: true
+  steps:
+    - intent: kk_facilities
+      entities:
+        - facility_of_kk
+    - action: action_provide_kk_facilities
+    - slot_was_set:
+        - reques_kk_for_facilities: false
